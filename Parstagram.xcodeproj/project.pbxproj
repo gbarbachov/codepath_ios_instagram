@@ -14,6 +14,8 @@
 		C73E62A5254255D5009FEA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73E62A3254255D5009FEA7A /* LaunchScreen.storyboard */; };
 		C73E62B0254255D5009FEA7A /* ParstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62AF254255D5009FEA7A /* ParstagramTests.swift */; };
 		C73E62BB254255D5009FEA7A /* ParstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62BA254255D5009FEA7A /* ParstagramUITests.swift */; };
+		C73E62D225425818009FEA7A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62D125425818009FEA7A /* LoginViewController.swift */; };
+		C73E62D72542582A009FEA7A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62D62542582A009FEA7A /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C73E62B6254255D5009FEA7A /* ParstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73E62BA254255D5009FEA7A /* ParstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParstagramUITests.swift; sourceTree = "<group>"; };
 		C73E62BC254255D5009FEA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73E62D125425818009FEA7A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C73E62D62542582A009FEA7A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				C73E62A1254255D5009FEA7A /* Assets.xcassets */,
 				C73E62A3254255D5009FEA7A /* LaunchScreen.storyboard */,
 				C73E62A6254255D5009FEA7A /* Info.plist */,
+				C73E62D125425818009FEA7A /* LoginViewController.swift */,
+				C73E62D62542582A009FEA7A /* FeedViewController.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73E62D225425818009FEA7A /* LoginViewController.swift in Sources */,
 				C73E6299254255D2009FEA7A /* AppDelegate.swift in Sources */,
+				C73E62D72542582A009FEA7A /* FeedViewController.swift in Sources */,
 				C73E629B254255D2009FEA7A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
