@@ -110,7 +110,7 @@
         <!--Feed View Controller-->
         <scene sceneID="cCL-Am-bPK">
             <objects>
-                <viewController id="yhk-KQ-NMh" customClass="FeedViewController" sceneMemberID="viewController">
+                <viewController id="yhk-KQ-NMh" customClass="FeedViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bj3-Ja-r3X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="417" id="FYb-ky-Ffj" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="417" id="FYb-ky-Ffj" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="417"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FYb-ky-Ffj" id="Zme-HC-PSw">
@@ -158,6 +158,11 @@
                                                 <constraint firstItem="e1W-B7-q9R" firstAttribute="leading" secondItem="Zme-HC-PSw" secondAttribute="leading" constant="8" id="xGn-bg-Q09"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="VJk-YC-Ji2" id="jNu-jd-lCP"/>
+                                            <outlet property="photoView" destination="e1W-B7-q9R" id="WgQ-ZA-PrC"/>
+                                            <outlet property="usernameLabel" destination="zeg-ue-nNw" id="O1W-4t-YH3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
