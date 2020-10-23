@@ -55,21 +55,27 @@
                                     <constraint firstAttribute="height" constant="34" id="U76-H5-CJu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdx-yD-F70">
-                                <rect key="frame" x="85" y="387" width="62" height="35"/>
+                                <rect key="frame" x="60" y="387" width="62" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TTC-cT-4u4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyQ-ND-E3k">
-                                <rect key="frame" x="258" y="387" width="71" height="35"/>
+                                <rect key="frame" x="283" y="387" width="71" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nb5-Lk-ST9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,18 +86,23 @@
                             <constraint firstItem="MrW-XG-Obs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="9Xd-7h-OhK"/>
                             <constraint firstItem="sEQ-Mg-xod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="LUN-sW-drL"/>
                             <constraint firstItem="xGX-PJ-OOU" firstAttribute="top" secondItem="MrW-XG-Obs" secondAttribute="bottom" constant="20" id="M8T-HI-JJt"/>
-                            <constraint firstItem="Qdx-yD-F70" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="OKn-1c-WEX"/>
+                            <constraint firstItem="Qdx-yD-F70" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="OKn-1c-WEX"/>
                             <constraint firstItem="Pyp-Le-7Ok" firstAttribute="top" secondItem="xGX-PJ-OOU" secondAttribute="bottom" constant="7.5" id="PtA-0Z-PgL"/>
                             <constraint firstItem="MrW-XG-Obs" firstAttribute="top" secondItem="sEQ-Mg-xod" secondAttribute="bottom" constant="20" id="V9p-lx-Fuc"/>
                             <constraint firstItem="r13-wo-eSb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="YsO-AP-aNd"/>
                             <constraint firstItem="xGX-PJ-OOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cYX-v8-eno"/>
                             <constraint firstItem="AyQ-ND-E3k" firstAttribute="top" secondItem="Pyp-Le-7Ok" secondAttribute="bottom" constant="20" id="htu-eA-gwu"/>
                             <constraint firstItem="Qdx-yD-F70" firstAttribute="top" secondItem="Pyp-Le-7Ok" secondAttribute="bottom" constant="20" id="hzG-f4-FpH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AyQ-ND-E3k" secondAttribute="trailing" constant="85" id="pcE-el-rQZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AyQ-ND-E3k" secondAttribute="trailing" constant="60" id="pcE-el-rQZ"/>
                             <constraint firstItem="sEQ-Mg-xod" firstAttribute="top" secondItem="r13-wo-eSb" secondAttribute="bottom" constant="20" id="rkb-f2-oeX" userLabel="Username.top = instagram_logo.bottom + 40"/>
                             <constraint firstItem="Pyp-Le-7Ok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zIN-8o-tyr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="Pyp-Le-7Ok" id="N5e-Iu-enj"/>
+                        <outlet property="usernameField" destination="MrW-XG-Obs" id="pnS-gS-dmb"/>
+                        <segue destination="hwV-29-Gb2" kind="presentation" identifier="loginSegue" id="Q5O-Fx-di7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +113,7 @@
             <objects>
                 <viewController id="yhk-KQ-NMh" customClass="FeedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bj3-Ja-r3X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="CVx-Wv-dAD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,7 +130,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hwV-29-Gb2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v83-Sf-w7Y">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
