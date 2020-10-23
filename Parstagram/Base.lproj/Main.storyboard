@@ -33,9 +33,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MrW-XG-Obs">
-                                <rect key="frame" x="30" y="251" width="300" height="34"/>
+                                <rect key="frame" x="30" y="251" width="350" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="e0u-43-QTf"/>
+                                    <constraint firstAttribute="width" constant="350" id="e0u-43-QTf"/>
                                     <constraint firstAttribute="height" constant="34" id="i3R-f6-sMp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,10 +48,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pyp-Le-7Ok">
-                                <rect key="frame" x="30" y="333" width="300" height="34"/>
+                                <rect key="frame" x="30" y="333" width="350" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="82y-LJ-eJY"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="JAv-or-MtJ"/>
+                                    <constraint firstAttribute="width" constant="350" id="JAv-or-MtJ"/>
                                     <constraint firstAttribute="height" constant="34" id="U76-H5-CJu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
