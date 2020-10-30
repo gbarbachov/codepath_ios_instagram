@@ -16,7 +16,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var refreshControl: UIRefreshControl!
     let commentBar = MessageInputBar()
     var showsCommentBar = false
-    var selectedPost : PFObject!
+    var selectedPost: PFObject!
         
     @IBOutlet weak var tableView: UITableView!
     
@@ -50,8 +50,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @objc func keyboardWillBeHidden(note: Notification){
         commentBar.inputTextView.text = nil
-               showsCommentBar = false
-               becomeFirstResponder()
+        showsCommentBar = false
+        becomeFirstResponder()
 
     }
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
@@ -87,7 +87,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Posts")
         query.includeKeys(["author", "comments", "comments.author"])
-        query.limit = 20
+        query.limit = 50
         
         query.findObjectsInBackground {(posts, error) in
             if (posts != nil){
@@ -129,10 +129,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.section]
         let comments = (post["comments"] as? [PFObject]) ?? []
         
-        if indexPath.row == comments.count + 1{
+        if indexPath.row == comments.count + 1 {
             showsCommentBar = true
             becomeFirstResponder()
             commentBar.inputTextView.becomeFirstResponder()
+            
+            selectedPost = post
         }
 //        let comment = PFObject(className: "Comments")
 //
