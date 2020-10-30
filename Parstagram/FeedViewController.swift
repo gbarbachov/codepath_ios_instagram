@@ -8,13 +8,14 @@
 import UIKit
 import Parse
 import AlamofireImage
+import MessageInputBar
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var posts = [PFObject]()
     var refreshControl: UIRefreshControl!
-
-
+    let commentBar = MessageInputBar()
+    var showsCommentBar = false
         
     @IBOutlet weak var tableView: UITableView!
     
@@ -31,6 +32,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.keyboardDismissMode = .interactive
         
         // Do any additional setup after loading the view.
         refreshControl = UIRefreshControl()
@@ -39,6 +41,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+    override var inputAccessoryView: UIView?{
+        return commentBar
+    }
+    override var canBecomeFirstResponder: Bool{
+        return showsCommentBar
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Posts")
