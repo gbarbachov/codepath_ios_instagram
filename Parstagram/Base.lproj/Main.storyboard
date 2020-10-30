@@ -110,7 +110,7 @@
         <!--Feed View Controller-->
         <scene sceneID="cCL-Am-bPK">
             <objects>
-                <viewController id="yhk-KQ-NMh" customClass="FeedViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedNavigationController" id="yhk-KQ-NMh" customClass="FeedViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bj3-Ja-r3X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
