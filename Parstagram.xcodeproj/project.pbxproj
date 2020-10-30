@@ -21,6 +21,7 @@
 		C73E62D72542582A009FEA7A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62D62542582A009FEA7A /* FeedViewController.swift */; };
 		C73E62EA254279D7009FEA7A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62E9254279D7009FEA7A /* CameraViewController.swift */; };
 		C73E630025428A49009FEA7A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E62FF25428A49009FEA7A /* PostCell.swift */; };
+		C73FBBCF254BE5000077BB4B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FBBCE254BE5000077BB4B /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C73E62D62542582A009FEA7A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C73E62E9254279D7009FEA7A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		C73E62FF25428A49009FEA7A /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		C73FBBCE254BE5000077BB4B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		C913D829FBA21FEDCEFCB1E6 /* Pods_Parstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C73E6298254255D2009FEA7A /* AppDelegate.swift */,
+				C73FBBCE254BE5000077BB4B /* CommentCell.swift */,
 				C73E629A254255D2009FEA7A /* SceneDelegate.swift */,
 				C73E629E254255D2009FEA7A /* Main.storyboard */,
 				C73E62A1254255D5009FEA7A /* Assets.xcassets */,
@@ -421,6 +424,7 @@
 				C73E62D72542582A009FEA7A /* FeedViewController.swift in Sources */,
 				C73E629B254255D2009FEA7A /* SceneDelegate.swift in Sources */,
 				C73E630025428A49009FEA7A /* PostCell.swift in Sources */,
+				C73FBBCF254BE5000077BB4B /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

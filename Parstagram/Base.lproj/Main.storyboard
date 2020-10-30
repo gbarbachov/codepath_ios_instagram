@@ -134,8 +134,8 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grigori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeg-ue-nNw">
-                                                    <rect key="frame" x="28" y="383" width="62.5" height="15"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                    <rect key="frame" x="28" y="383" width="56" height="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -163,6 +163,38 @@
                                             <outlet property="photoView" destination="e1W-B7-q9R" id="WgQ-ZA-PrC"/>
                                             <outlet property="usernameLabel" destination="zeg-ue-nNw" id="O1W-4t-YH3"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="Org-QS-aAT" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="445" width="414" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Org-QS-aAT" id="GOr-yc-OX1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grigori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kV-Fm-a7p">
+                                                    <rect key="frame" x="16" y="8" width="56" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO5-Lg-w8b">
+                                                    <rect key="frame" x="80" y="8" width="326" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MO5-Lg-w8b" firstAttribute="leading" secondItem="4kV-Fm-a7p" secondAttribute="trailing" constant="8" id="079-wp-1W3"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4kV-Fm-a7p" secondAttribute="bottom" constant="8" id="IhK-ES-Foy"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MO5-Lg-w8b" secondAttribute="bottom" constant="8" id="LOW-6E-nj1"/>
+                                                <constraint firstItem="MO5-Lg-w8b" firstAttribute="top" secondItem="GOr-yc-OX1" secondAttribute="top" constant="8" id="Qbb-Np-Yth"/>
+                                                <constraint firstAttribute="trailing" secondItem="MO5-Lg-w8b" secondAttribute="trailing" constant="8" id="ZPC-gz-iUR"/>
+                                                <constraint firstItem="MO5-Lg-w8b" firstAttribute="leading" secondItem="4kV-Fm-a7p" secondAttribute="trailing" constant="8" id="dWm-gJ-doH"/>
+                                                <constraint firstItem="4kV-Fm-a7p" firstAttribute="top" secondItem="GOr-yc-OX1" secondAttribute="top" constant="8" id="jdI-OH-PQk"/>
+                                                <constraint firstItem="4kV-Fm-a7p" firstAttribute="leading" secondItem="GOr-yc-OX1" secondAttribute="leading" constant="16" id="pXJ-cm-GHl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
