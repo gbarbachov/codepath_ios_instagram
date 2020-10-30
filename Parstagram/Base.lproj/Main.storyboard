@@ -139,7 +139,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Comments!!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJk-YC-Ji2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJk-YC-Ji2">
                                                     <rect key="frame" x="111" y="380" width="283" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -150,11 +150,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="e1W-B7-q9R" secondAttribute="trailing" constant="8" id="3Ck-0q-7gO"/>
                                                 <constraint firstItem="VJk-YC-Ji2" firstAttribute="leading" secondItem="zeg-ue-nNw" secondAttribute="trailing" constant="8" id="A3Z-EC-8Er"/>
                                                 <constraint firstItem="zeg-ue-nNw" firstAttribute="leading" secondItem="Zme-HC-PSw" secondAttribute="leadingMargin" constant="8" id="IOA-hY-Ux6"/>
+                                                <constraint firstItem="VJk-YC-Ji2" firstAttribute="firstBaseline" secondItem="zeg-ue-nNw" secondAttribute="baseline" id="KmN-aX-wqF"/>
                                                 <constraint firstItem="e1W-B7-q9R" firstAttribute="top" secondItem="Zme-HC-PSw" secondAttribute="top" constant="8" id="SZo-6G-XHd"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="zeg-ue-nNw" secondAttribute="bottom" constant="8" id="Tdn-aV-FlQ"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zeg-ue-nNw" secondAttribute="bottom" constant="8" id="Tdn-aV-FlQ"/>
                                                 <constraint firstItem="zeg-ue-nNw" firstAttribute="top" secondItem="e1W-B7-q9R" secondAttribute="bottom" constant="8" id="WWW-8Q-ur4"/>
-                                                <constraint firstItem="VJk-YC-Ji2" firstAttribute="trailing" secondItem="Zme-HC-PSw" secondAttribute="trailingMargin" constant="8" id="k8n-B7-wtJ"/>
-                                                <constraint firstItem="VJk-YC-Ji2" firstAttribute="bottom" secondItem="Zme-HC-PSw" secondAttribute="bottomMargin" constant="8" id="poz-6M-bUG"/>
+                                                <constraint firstItem="VJk-YC-Ji2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zme-HC-PSw" secondAttribute="trailingMargin" constant="8" id="k8n-B7-wtJ"/>
+                                                <constraint firstItem="VJk-YC-Ji2" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zme-HC-PSw" secondAttribute="bottomMargin" constant="8" id="poz-6M-bUG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VJk-YC-Ji2" secondAttribute="bottom" constant="-9" id="vqH-Jo-In8"/>
                                                 <constraint firstItem="e1W-B7-q9R" firstAttribute="leading" secondItem="Zme-HC-PSw" secondAttribute="leading" constant="8" id="xGn-bg-Q09"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -177,8 +179,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO5-Lg-w8b">
-                                                    <rect key="frame" x="80" y="8" width="326" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Comments!!!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO5-Lg-w8b">
+                                                    <rect key="frame" x="80" y="8" width="87" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -189,12 +191,15 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4kV-Fm-a7p" secondAttribute="bottom" constant="8" id="IhK-ES-Foy"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MO5-Lg-w8b" secondAttribute="bottom" constant="8" id="LOW-6E-nj1"/>
                                                 <constraint firstItem="MO5-Lg-w8b" firstAttribute="top" secondItem="GOr-yc-OX1" secondAttribute="top" constant="8" id="Qbb-Np-Yth"/>
-                                                <constraint firstAttribute="trailing" secondItem="MO5-Lg-w8b" secondAttribute="trailing" constant="8" id="ZPC-gz-iUR"/>
-                                                <constraint firstItem="MO5-Lg-w8b" firstAttribute="leading" secondItem="4kV-Fm-a7p" secondAttribute="trailing" constant="8" id="dWm-gJ-doH"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MO5-Lg-w8b" secondAttribute="trailing" constant="8" id="ZPC-gz-iUR"/>
                                                 <constraint firstItem="4kV-Fm-a7p" firstAttribute="top" secondItem="GOr-yc-OX1" secondAttribute="top" constant="8" id="jdI-OH-PQk"/>
                                                 <constraint firstItem="4kV-Fm-a7p" firstAttribute="leading" secondItem="GOr-yc-OX1" secondAttribute="leading" constant="16" id="pXJ-cm-GHl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="MO5-Lg-w8b" id="chZ-gQ-H8U"/>
+                                            <outlet property="nameLabel" destination="4kV-Fm-a7p" id="YYl-8I-G5B"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
