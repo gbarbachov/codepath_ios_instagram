@@ -75,7 +75,24 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             return posts.count
         }
         
-  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.row]
+        let comment = PFObject(className: "Comments")
+        
+        comment["text"] = "This is a comment"
+        comment["post"] = post
+        comment["author"] = PFUser.current()!
+        post.add(comment, forKey: "comments")
+        post.saveInBackground{(success, error) in
+                    if success{
+                        print("Comment is successfully saved!!!")
+                    } else{
+                        print("Error. Comment is not saved!!!")
+                    }
+                }
+
+
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
